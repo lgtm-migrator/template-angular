@@ -1,33 +1,20 @@
 <h1 align="center">Welcome to template angular 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/koromerzhin/template-angular#readme" target="_blank">
-
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-
+  <a href="https://github.com/koromerzhin/docker#readme">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
   </a>
-  <a href="https://github.com/koromerzhin/template-angular/graphs/commit-activity" target="_blank">
-
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-
+  <a href="https://github.com/koromerzhin/docker/graphs/commit-activity">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
   </a>
-  <a href="https://github.com/koromerzhin/template-angular/blob/master/LICENSE" target="_blank">
-
-    <img alt="License: MIT" src="https://img.shields.io/github/license/koromerzhin/template-angular" />
-
-  </a>
+  <a href="https://github.com/koromerzhin/docker/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
+  </a> 
   <!-- ALL-CONTRIBUTORS-BADGE: START - Do not remove or modify this section --><a href="#-contributors"><img src="https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square" alt="All Contributors" /></a><!-- ALL-CONTRIBUTORS-BADGE: END -->
-  <a href="https://twitter.com/koromerzhin" target="_blank">
-
-    <img alt="Twitter: koromerzhin" src="https://img.shields.io/twitter/follow/koromerzhin.svg?style=social" />
-
+  <a href="https://twitter.com/koromerzhin">
+    <img alt="Twitter: koromerzhin" src="https://img.shields.io/twitter/follow/koromerzhin.svg?style=social" target="_blank" />
   </a>
-
-	
-
   
-
-![Test suite](https://github.com/koromerzhin/template-angular/workflows/Test%20suite/badge.svg)
 
 </p>
 
