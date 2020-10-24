@@ -55,7 +55,7 @@ git-check: node_modules ## CHECK before
 	@make contributors-check -i
 	@git status
 
-install: ## Installation
+install: apps/node_modules ## Installation
 	@make docker-image-pull
 	@make docker-create-network -i
 	@make docker-deploy -i
