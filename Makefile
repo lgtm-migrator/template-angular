@@ -58,3 +58,6 @@ install: ## Installation
 
 node_modules: ## npm install
 	npm install
+
+ssh: ## ssh
+	docker exec -ti $(WWWFULLNAME) /bin/bash
