@@ -14,7 +14,9 @@
   <a href="https://twitter.com/koromerzhin">
     <img alt="Twitter: koromerzhin" src="https://img.shields.io/twitter/follow/koromerzhin.svg?style=social" target="_blank" />
   </a>
-  
+
+  ![docker](https://github.com/koromerzhin/template-angular/workflows/docker/badge.svg?branch=develop)
+  ![Continuous Integration](https://github.com/koromerzhin/template-angular/workflows/Continuous%20Integration/badge.svg?branch=develop)
 
 </p>
 
