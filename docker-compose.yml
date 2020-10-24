@@ -1,0 +1,20 @@
+version: "3.4"
+networks:
+  proxynetwork:
+    external: true
+services:
+  www:
+    image: koromerzhin/angular:latest
+    volumes:
+      - ${PWD}/apps:/app
+    networks:
+      - proxynetwork
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.www-angular.rule=Host(`angular.lxc`, `www.angular.lxc`)"
+        - "traefik.http.middlewares.wwwredirectregex.redirectregex.regex=^http://angular.lxc/(.*)"
+        - "traefik.http.middlewares.wwwredirectregex.redirectregex.replacement=http://www.angular.lxc/$${1}"
+        - "traefik.http.routers.www-angular.middlewares=wwwredirectregex"
+        - "traefik.http.routers.www-angular.entrypoints=web"
+        - "traefik.http.services.www-angular.loadbalancer.server.port=4200"
