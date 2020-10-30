@@ -10,8 +10,6 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-![docker](https://github.com/koromerzhin/template-angular/workflows/docker/badge.svg?branch=develop)
-
 ![Continuous Integration](https://github.com/koromerzhin/template-angular/workflows/Continuous%20Integration/badge.svg?branch=develop)
 
 </p>
