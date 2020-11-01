@@ -4,7 +4,7 @@ networks:
     external: true
 services:
   www:
-    image: koromerzhin/angular:latest
+    image: docker pull koromerzhin/nodejs:10.2.0-angular
     volumes:
       - ${PWD}/apps:/app
     networks:
