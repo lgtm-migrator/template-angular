@@ -5,8 +5,6 @@ NETWORK       := proxynetwork
 WWW           := $(STACK)_www
 WWWFULLNAME   := $(WWW).1.$$(docker service ps -f 'name=$(PRWWWOXY)' $(WWW) -q --no-trunc | head -n1)
 
-
-
 SUPPORTED_COMMANDS := contributors docker logs git linter
 SUPPORTS_MAKE_ARGS := $(findstring $(firstword $(MAKECMDGOALS)), $(SUPPORTED_COMMANDS))
 ifneq "$(SUPPORTS_MAKE_ARGS)" ""
@@ -32,9 +30,8 @@ package-lock.json: package.json
 node_modules: package-lock.json
 	npm install
 
-build-ci: ## build
+build: ## build
 	cd apps && npm run build
-
 
 contributors: ## Contributors
 ifeq ($(COMMAND_ARGS),add)
@@ -51,7 +48,7 @@ docker: ## Scripts docker
 ifeq ($(COMMAND_ARGS),create-network)
 	@docker network create --driver=overlay $(NETWORK)
 else ifeq ($(COMMAND_ARGS),deploy)
-	@docker stack deploy -c docker-compose.yml $(STACK)
+	@docker stack deploy -c docker compose.yml $(STACK)
 else ifeq ($(COMMAND_ARGS),image-pull)
 	@docker image pull koromerzhin/nodejs:10.2.0-angular
 else ifeq ($(COMMAND_ARGS),ls)
@@ -104,8 +101,7 @@ else
 endif
 
 install: node_modules apps/node_modules ## Installation
-	@make docker-deploy -i
-
+	@make docker deploy -i
 
 linter: ## Scripts Linter
 ifeq ($(COMMAND_ARGS),all)

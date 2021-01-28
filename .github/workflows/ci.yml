@@ -35,4 +35,4 @@ jobs:
       - name: Linter README.md
         run: make linter-readme
       - name: Launch build
-        run: make build-ci
+        run: make build
