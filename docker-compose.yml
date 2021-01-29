@@ -12,8 +12,7 @@ services:
     deploy:
       labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.www-angular.rule=Host(`angular.lxc`, `www.angular.lxc`)"
-        - "traefik.http.middlewares.angularredirectregex.redirectregex.regex=^http://angular.lxc/(.*)"
-        - "traefik.http.middlewares.angularredirectregex.redirectregex.replacement=http://www.angular.lxc/$${1}"
-        - "traefik.http.routers.www-angular.entrypoints=web"
-        - "traefik.http.services.www-angular.loadbalancer.server.port=4200"
+        - "traefik.http.routers.angular.rule=Host(`angular.traefik.me`)"
+        - "traefik.http.routers.angular-tls.tls.domains[0].main=angular.traefik.me"
+        - "traefik.http.routers.angular-tls.tls.domains[0].sans=angular-*.traefik.me"
+        - "traefik.http.services.angular.loadbalancer.server.port=4200"
