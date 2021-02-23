@@ -73,9 +73,8 @@ make help
 
 Contributions, issues and feature requests are welcome!
 Feel free to check [issues page](https://github.com/koromerzhin/template-angular/issues).
-You can also take a look at the [contributing guide](
-    https://github.com/koromerzhin/template-angular/blob/develop/CONTRIBUTING.md
-    ).
+You can also take a look at the
+[contributing guide](https://github.com/koromerzhin/template-angular/blob/develop/CONTRIBUTING.md).
 
 ## Show your support
 
@@ -85,9 +84,8 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2019 [koromerzhin](https://github.com/koromerzhin).
 
-This project is [MIT](
-    https://github.com/koromerzhin/template-angular/blob/develop/LICENSE
-    ) licensed.
+This project is
+[MIT](https://github.com/koromerzhin/template-angular/blob/develop/LICENSE) licensed.
 
 ## ✨ Contributors
 
