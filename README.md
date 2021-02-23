@@ -10,7 +10,9 @@
 ## 🏠 [Homepage](https://github.com/koromerzhin/template-angular#readme)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Need
@@ -32,31 +34,31 @@ Hosts:
 
 ## Récupérer les images docker
 
-``` sh
+```sh
 make docker image-pull
 ```
 
 ## Install
 
-``` sh
+```sh
 make install
 ```
 
 ## after git add
 
-``` sh
+```sh
 make git check
 ```
 
 ## Replace git commit
 
-``` sh
+```sh
 make git commit
 ```
 
 ## help
 
-``` sh
+```sh
 make help
 ```
 
@@ -71,9 +73,9 @@ make help
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
-Feel free to check [issues page](https://github.com/koromerzhin/template-angular/issues).
-You can also take a look at the
+Contributions, issues and feature requests are welcome! Feel free to check
+[issues page](https://github.com/koromerzhin/template-angular/issues). You can
+also take a look at the
 [contributing guide](https://github.com/koromerzhin/template-angular/blob/develop/CONTRIBUTING.md).
 
 ## Show your support
@@ -85,11 +87,13 @@ Give a ⭐️ if this project helped you!
 Copyright © 2019 [koromerzhin](https://github.com/koromerzhin).
 
 This project is
-[MIT](https://github.com/koromerzhin/template-angular/blob/develop/LICENSE) licensed.
+[MIT](https://github.com/koromerzhin/template-angular/blob/develop/LICENSE)
+licensed.
 
 ## ✨ Contributors
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -106,9 +110,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors)
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
 specification. Contributions of any kind welcome!
 
 ---
