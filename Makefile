@@ -55,8 +55,6 @@ ifeq ($(COMMAND_ARGS),create-network)
 	@docker network create --driver=overlay $(NETWORK)
 else ifeq ($(COMMAND_ARGS),deploy)
 	@docker stack deploy -c docker-compose.yml $(STACK)
-else ifeq ($(COMMAND_ARGS),image-pull)
-	@docker image pull koromerzhin/nodejs:10.2.0-angular
 else ifeq ($(COMMAND_ARGS),ls)
 	@docker stack services $(STACK)
 else ifeq ($(COMMAND_ARGS),stop)
@@ -68,7 +66,6 @@ else
 	@echo "---"
 	@echo "create-network: create network"
 	@echo "deploy: deploy"
-	@echo "image-pull: Get docker image"
 	@echo "ls: docker service"
 	@echo "stop: docker stop"
 endif
@@ -107,7 +104,6 @@ else
 endif
 
 install: node_modules apps/node_modules ## Installation
-	@make docker image-pull -i
 	@make docker deploy -i
 
 linter: node_modules ## Scripts Linter
