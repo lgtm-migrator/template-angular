@@ -6,7 +6,6 @@ NETWORK       := proxynetwork
 
 WWW         := $(STACK)_www
 WWWFULLNAME := $(WWW).1.$$(docker service ps -f 'name=$(WWW)' $(WWW) -q --no-trunc | head -n1)
-WWWRUN      := docker run --rm -v ${PWD}/apps:/app koromerzhin/nodejs:10.2.0-angular
 
 SUPPORTED_COMMANDS := contributors docker logs git linter sleep
 SUPPORTS_MAKE_ARGS := $(findstring $(firstword $(MAKECMDGOALS)), $(SUPPORTED_COMMANDS))
@@ -24,9 +23,6 @@ ifeq ($(isDocker), 0)
 	@echo "Docker is not launch"
 	exit 1
 endif
-
-apps/node_modules:
-	$(WWWRUN) npm install
 
 node_modules:
 	@npm install
@@ -102,7 +98,7 @@ else
 	@echo "status: status"
 endif
 
-install: node_modules apps/node_modules ## Installation
+install: node_modules ## Installation
 	@make docker deploy -i
 
 linter: node_modules ## Scripts Linter
