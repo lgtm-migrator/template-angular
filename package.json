@@ -6,7 +6,6 @@
     "licenses": "license-checker",
     "linter-markdown": "markdownlint",
     "contributors": "all-contributors",
-    "changelog": "gitmoji-changelog",
     "readme": "readme"
   },
   "repository": {
