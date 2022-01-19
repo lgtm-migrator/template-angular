@@ -27,6 +27,4 @@ services:
       labels:
         - "traefik.enable=true"
         - "traefik.http.routers.angular.rule=HostRegexp(`angular.traefik.me`, `angular.{ip:.*}.traefik.me`)"
-        - "traefik.http.routers.angular-tls.tls.domains[0].main=angular.traefik.me"
-        - "traefik.http.routers.angular-tls.tls.domains[0].sans=angular-*.traefik.me"
         - "traefik.http.services.angular.loadbalancer.server.port=4200"
