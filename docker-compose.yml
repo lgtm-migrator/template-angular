@@ -7,7 +7,7 @@ networks:
     attachable: true
 services:
   exec:
-    image: koromerzhin/nodejs:10.2.0-angular
+    image: koromerzhin/angular:10.2.0
     volumes:
       - ${PWD}/apps:/app
     command: sh -c "npm install"
@@ -17,7 +17,7 @@ services:
       labels:
         - "traefik.enable=false"
   www:
-    image: koromerzhin/nodejs:10.2.0-angular
+    image: koromerzhin/angular:10.2.0
     volumes:
       - ${PWD}/apps:/app
     networks:
