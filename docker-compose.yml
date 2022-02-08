@@ -10,7 +10,7 @@ services:
     image: node:15.14.0
     working_dir: /app
     command: >
-      sh -c "npm install -g @angular/cli@11.2.18 && npm install && npm install && ng serve --host 0.0.0.0 --disableHostCheck"
+      sh -c "npm install -g @angular/cli@11.2.18 && npm install && npm install && npm run start"
     volumes:
       - ${PWD}/apps:/app
     networks:
@@ -19,5 +19,7 @@ services:
     deploy:
       labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.angular.rule=HostRegexp(`angular.traefik.me`, `angular.{ip:.*}.traefik.me`)"
+        - "traefik.http.routers.angular.rule=Host(`angular.traefik.me`)"
+        - "traefik.http.routers.angular-tls.tls.domains[0].main=angular.traefik.me"
+        - "traefik.http.routers.angular.tls=true"
         - "traefik.http.services.angular.loadbalancer.server.port=4200"
