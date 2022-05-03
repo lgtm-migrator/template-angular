@@ -30,6 +30,14 @@ Hosts:
 
 - angular.traefik.me
 
+## Download
+
+```sh
+git clone git@github.com:koromerzhin/template-angular.git template-angular
+cd template-angular
+git submodule update --init
+```
+
 ## Install
 
 ``` sh
